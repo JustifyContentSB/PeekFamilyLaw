@@ -1,0 +1,12 @@
+.header {
+    &__inner {
+        padding-top: 77px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        display: flex;
+    }
+}
