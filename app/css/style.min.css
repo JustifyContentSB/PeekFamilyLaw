@@ -429,3 +429,16 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+.protect {
+  margin-top: 85px;
+}
+
+.protect__title {
+  font-family: 'Martel', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 51px;
+  letter-spacing: -0.00064595px;
+  color: #000000;
+}
