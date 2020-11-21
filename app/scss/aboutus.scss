@@ -2,6 +2,9 @@
     margin-top: -49px;
     &__video {
         display: flex;
+        &-tablet {
+            display: none;
+        }
     }
     &__title {
         display: none;
@@ -9,5 +12,26 @@
     &__text {
         margin-top: 30px;
         color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .aboutus {
+        margin-top: -117px;
+        &__video {
+            &-tel {
+                display: none;
+            }
+            &-tablet {
+                display: block;
+            }
+        }
+        &__text {
+            margin-top: 49px;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: -0.00038757px;
+            color: #666666;
+        }
     }
 }

@@ -1,11 +1,12 @@
 .stats {
-    width: 375px;
+    width: 768px;
     min-height: 864px;
     margin: 0 auto;
     margin-top: 75px;
     padding-top: 92px;
     background: url('../images/stats/stats-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     &__title {
         color: #fff;
     }
@@ -25,7 +26,6 @@
         & tr {
             width: 100%;
             display: flex;
-            align-items: flex-start;
             &:first-child td {
                 padding-top: 35px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -47,6 +47,48 @@
             &:nth-child(odd) {
                 padding-right: 40px;
                 border-right: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            & b {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .stats {
+        min-height: 1080px;
+        padding-top: 133px;
+        &__text {
+            width: 445px;
+            padding-left: 2px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        &__table {
+            margin-top: 95px;
+            & span {
+                font-family: 'Lora';
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 70px;
+                letter-spacing: -0.00118424px;
+            }
+            & td {
+                min-height: 245px;
+                padding-right: 57px;
+                &:nth-child(odd) {
+                    padding-right: 57px;
+                }
+                &:first-child br {
+                    display: none;
+                }
+                & b {
+                    display: inline;
+                }
+                & p {
+                    margin-top: 25px;
+                }
             }
         }
     }
