@@ -23,6 +23,9 @@
             padding: 16px 0;
         }
     }
+    &__social {
+        margin-top: 27px;
+    }
     &__bottom {
         margin-top: 60px;
     }
@@ -32,5 +35,31 @@
         font-size: 13px;
         line-height: 24px;
         color: rgba(#000000, 0.2);
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .footer {
+        margin-top: 72px;
+        &__social {
+            margin-top: 37px;
+        }
+        &__list {
+            margin-top: 37px;
+        }
+        &__bottom {
+            margin-top: 65px;
+        }
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__year {
+            margin-right: 61px;
+        }
+        &__copy {
+            margin-top: 30px;
+            width: 100%;
+        }
     }
 }

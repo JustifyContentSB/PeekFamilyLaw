@@ -652,6 +652,9 @@ body {
     line-height: 40px;
     letter-spacing: -0.00038757px;
   }
+  .practice__list {
+    margin-top: 0;
+  }
 }
 
 .practice-menu li {
@@ -1014,6 +1017,10 @@ body {
   padding: 16px 0;
 }
 
+.footer__social {
+  margin-top: 27px;
+}
+
 .footer__bottom {
   margin-top: 60px;
 }
@@ -1026,8 +1033,36 @@ body {
   color: rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 72px;
+  }
+  .footer__social {
+    margin-top: 37px;
+  }
+  .footer__list {
+    margin-top: 37px;
+  }
+  .footer__bottom {
+    margin-top: 65px;
+  }
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__year {
+    margin-right: 61px;
+  }
+  .footer__copy {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
 .social {
-  margin-top: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,4 +1111,11 @@ body {
   line-height: 16px;
   color: rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .privacy-list a {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
