@@ -447,6 +447,25 @@ body {
   font-weight: 400;
 }
 
+.section-title {
+  font-family: 'Martel', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 51px;
+  letter-spacing: -0.00064595px;
+  color: #000000;
+}
+
+.header {
+  margin: 0 auto;
+  width: 375px;
+  min-height: 893px;
+  background: url("../images/header/header-bg-tel.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 .header__inner {
   padding-top: 77px;
 }
@@ -492,13 +511,13 @@ body {
 
 .header__request {
   display: inline-block;
-  margin-top: 15px;
-  padding: 26px 31px;
+  margin-top: 30px;
+  padding: 28px 31px;
   background: #0F3962;
   border-radius: 34px;
   font-weight: 800;
   font-size: 12.36px;
-  line-height: 16px;
+  line-height: 12.36px;
   letter-spacing: -0.000266132px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -508,4 +527,47 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aboutus {
+  margin-top: -49px;
+}
+
+.aboutus__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutus__title {
+  display: none;
+}
+
+.aboutus__text {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.practice {
+  margin-top: 57px;
+}
+
+.practice__text {
+  margin-top: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.practice__list {
+  margin-top: 40px;
+}
+
+.practice-menu li {
+  border-bottom: 1px solid #DBC9AC;
+}
+
+.practice-menu a {
+  padding: 8px 0 9px;
+  color: #7F7F7F;
+  text-transform: uppercase;
+  display: inline-block;
 }

@@ -1,0 +1,11 @@
+.practice-menu {
+    & li {
+        border-bottom: 1px solid #DBC9AC;
+    }
+    & a {
+        padding: 8px 0 9px;
+        color: #7F7F7F;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}

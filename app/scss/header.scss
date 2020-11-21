@@ -1,4 +1,10 @@
 .header {
+    margin: 0 auto;
+    width: 375px;
+    min-height: 893px;
+    background: url('../images/header/header-bg-tel.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
     &__inner {
         padding-top: 77px;
     }
@@ -29,13 +35,13 @@
     }
     &__request {
         display: inline-block;
-        margin-top: 15px;
-        padding: 26px 31px;
+        margin-top: 30px;
+        padding: 28px 31px;
         background: #0F3962;
         border-radius: 34px;
         font-weight: 800;
         font-size: 12.36px;
-        line-height: 16px;
+        line-height: 12.36px;
         letter-spacing: -0.000266132px;
         text-transform: uppercase;
         color: #FFFFFF;
