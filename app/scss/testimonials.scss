@@ -1,0 +1,24 @@
+.testimonials {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 108px;
+    background: url('../images/testimonials/bitmap.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    text-align: center;
+    & p {
+        width: 291px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+    & &__author {
+        margin-top: 47px;
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.000344507px;
+    }
+}

@@ -393,6 +393,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.stats__table span {
+  font-family: 'Martel', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 51px;
+  letter-spacing: -0.00064595px;
+  color: #000000;
+}
+
 @font-face {
   font-family: 'Muli';
   font-display: swap;
@@ -570,4 +580,96 @@ body {
   color: #7F7F7F;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.stats {
+  width: 375px;
+  min-height: 864px;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding-top: 92px;
+  background: url("../images/stats/stats-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.stats__title {
+  color: #fff;
+}
+
+.stats__text {
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stats__table {
+  width: 100%;
+  margin-top: 53px;
+}
+
+.stats__table span {
+  color: #ffffff;
+  text-align: left;
+  line-height: 43px;
+}
+
+.stats__table tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.stats__table tr:first-child td {
+  padding-top: 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stats__table td {
+  min-height: 150px;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  width: 50%;
+  font-family: 'Muli';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: -0.00038757px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stats__table td:nth-child(odd) {
+  padding-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.testimonials {
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 108px;
+  background: url("../images/testimonials/bitmap.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  text-align: center;
+}
+
+.testimonials p {
+  width: 291px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.testimonials .testimonials__author {
+  margin-top: 47px;
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.000344507px;
 }
