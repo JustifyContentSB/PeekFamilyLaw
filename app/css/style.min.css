@@ -393,6 +393,46 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Muli';
+  font-display: swap;
+  src: local("O"), url("../fonts/muli/muli-v20-latin-ext_latin-300.woff") format("woff"), url("../fonts/muli/muli-v20-latin-ext_latin-300.woff2") format("woff2"), url("../fonts/muli/muli-v20-latin-ext_latin-300.ttf") format("truetype"), url("../fonts/muli/muli-v20-latin-ext_latin-300.eot") format("eot"), url("../fonts/muli/muli-v20-latin-ext_latin-300.otf") format("opentype"), url("../fonts/muli/muli-v20-latin-ext_latin-300.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-display: swap;
+  src: local("O"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.woff") format("woff"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.woff2") format("woff2"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.ttf") format("truetype"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.eot") format("eot"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.otf") format("opentype"), url("../fonts/muli/muli-v20-latin-ext_latin-regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-display: swap;
+  src: local("O"), url("../fonts/muli/muli-v20-latin-ext_latin-700.woff") format("woff"), url("../fonts/muli/muli-v20-latin-ext_latin-700.woff2") format("woff2"), url("../fonts/muli/muli-v20-latin-ext_latin-700.ttf") format("truetype"), url("../fonts/muli/muli-v20-latin-ext_latin-700.eot") format("eot"), url("../fonts/muli/muli-v20-latin-ext_latin-700.otf") format("opentype"), url("../fonts/muli/muli-v20-latin-ext_latin-700.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-display: swap;
+  src: local("O"), url("../fonts/muli/muli-v20-latin-ext_latin-800.woff") format("woff"), url("../fonts/muli/muli-v20-latin-ext_latin-800.woff2") format("woff2"), url("../fonts/muli/muli-v20-latin-ext_latin-800.ttf") format("truetype"), url("../fonts/muli/muli-v20-latin-ext_latin-800.eot") format("eot"), url("../fonts/muli/muli-v20-latin-ext_latin-800.otf") format("opentype"), url("../fonts/muli/muli-v20-latin-ext_latin-800.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-display: swap;
+  src: local("O"), url("../fonts/muli/muli-v20-latin-ext_latin-900.woff") format("woff"), url("../fonts/muli/muli-v20-latin-ext_latin-900.woff2") format("woff2"), url("../fonts/muli/muli-v20-latin-ext_latin-900.ttf") format("truetype"), url("../fonts/muli/muli-v20-latin-ext_latin-900.eot") format("eot"), url("../fonts/muli/muli-v20-latin-ext_latin-900.otf") format("opentype"), url("../fonts/muli/muli-v20-latin-ext_latin-900.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .container {
   width: 375px;
   margin: 0 auto;
@@ -401,10 +441,17 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   min-width: 375px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 400;
 }
 
 .header__inner {
   padding-top: 77px;
+}
+
+.header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,21 +471,41 @@ body {
   display: flex;
 }
 
-.nav__burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.protect {
+.header__bottom {
   margin-top: 85px;
 }
 
-.protect__title {
+.header__title {
   font-family: 'Martel', sans-serif;
   font-weight: 900;
   font-size: 30px;
   line-height: 51px;
   letter-spacing: -0.00064595px;
   color: #000000;
+}
+
+.header__text {
+  width: 212px;
+  margin-top: 14px;
+  line-height: 30px;
+}
+
+.header__request {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 26px 31px;
+  background: #0F3962;
+  border-radius: 34px;
+  font-weight: 800;
+  font-size: 12.36px;
+  line-height: 16px;
+  letter-spacing: -0.000266132px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.nav__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

@@ -1,6 +1,8 @@
 .header {
     &__inner {
         padding-top: 77px;
+    }
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -8,5 +10,34 @@
     }
     &__logo {
         display: flex;
+    }
+    &__bottom {
+        margin-top: 85px;
+    }
+    &__title {
+        font-family: 'Martel', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 51px;
+        letter-spacing: -0.00064595px;
+        color: #000000;
+    }
+    &__text {
+        width: 212px;
+        margin-top: 14px;
+        line-height: 30px;
+    }
+    &__request {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 26px 31px;
+        background: #0F3962;
+        border-radius: 34px;
+        font-weight: 800;
+        font-size: 12.36px;
+        line-height: 16px;
+        letter-spacing: -0.000266132px;
+        text-transform: uppercase;
+        color: #FFFFFF;
     }
 }
