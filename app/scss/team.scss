@@ -1,5 +1,5 @@
 .team {
-    width: 375px;
+    width: 768px;
     margin: 0 auto;
     margin-top: 106px;
     background: url('../images/team/team-bg.png');
@@ -38,7 +38,7 @@
         margin-right: 46px;
     }
     &__photo {
-        width: 247px;
+        width: 100%;
         display: flex;
         border-radius: 6px;
         overflow: hidden;
@@ -61,5 +61,57 @@
         margin-top: 20px;
         color: rgba(255, 255, 255, 0.6);
         line-height: 30px;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .team {
+        margin-top: 213px;
+        background: url('../images/team/team-bg-big.jpg');
+        background-size: 128%;
+        &__inner {
+            padding-top: 140px;
+            padding-bottom: 177px;
+        }
+        &__about {
+            padding: 0 80px;
+        }
+        &__descr {
+            margin-top: 28px;
+            width: 454px;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: -0.00038757px;
+        }
+        &__list {
+            margin-top: 82px;
+            padding: 0 80px;
+        }
+        &__item {
+            width: 362px;
+            margin-right: 57px;
+            &:first-child {
+                & .team__photo {
+                    width: 362px;
+                    height: 296px;
+                    background: url('../images/team/team-1-big.jpg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                & img {
+                    display: none;
+                }
+            }
+        }
+        &__photo {
+            border-radius: 11px;
+            & img {
+                width: 362px;
+                height: 296px;
+            }
+        }
+        &__text {
+            color: rgba(#fff, 0.4);
+        }
     }
 }

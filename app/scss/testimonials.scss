@@ -1,5 +1,5 @@
 .testimonials {
-    width: 375px;
+    width: 768px;
     margin: 0 auto;
     margin-top: 108px;
     background: url('../images/testimonials/bitmap.png');
@@ -7,12 +7,13 @@
     background-size: contain;
     background-position: bottom;
     text-align: center;
-    & p {
+    &__text {
         width: 291px;
         margin: 0 auto;
         margin-top: 24px;
+        color: rgba(#000, 0.6);
     }
-    & &__author {
+    &__author {
         margin-top: 47px;
         font-family: 'Muli';
         font-style: normal;
@@ -20,5 +21,48 @@
         font-size: 16px;
         line-height: 20px;
         letter-spacing: -0.000344507px;
+    }
+    &__photo {
+        display: none;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 28px;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .testimonials {
+        margin-top: 210px;
+        background: transparent;
+        // background: url('../images/testimonials/bitmap-tablet.png');
+        // background-size: 200% auto;
+        background-position: right 0 bottom 0;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -213px;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 974px;
+            background: url('../images/testimonials/bitmap-tablet.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__text {
+            width: 508px;
+            margin-top: 29px;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -0.00038757px;
+        }
+        &__author {
+            margin-top: 79px;
+        }
+        &__photo {
+            display: flex;
+        }
     }
 }
