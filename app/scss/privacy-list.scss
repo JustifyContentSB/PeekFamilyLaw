@@ -1,0 +1,15 @@
+.privacy-list {
+    display: flex;
+    flex-wrap: wrap;
+    & li {
+        margin-right: 15px;
+    }
+    & a {
+        font-family: 'Muli';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: rgba(#000000, 0.4);
+        border-bottom: 1px solid rgba(#000000, 0.1);
+    }
+}

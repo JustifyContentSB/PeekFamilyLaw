@@ -2,9 +2,11 @@
     margin: 0 auto;
     width: 375px;
     min-height: 893px;
-    background: url('../images/header/header-bg-tel.jpg');
+    background: url('../images/header/header-bg.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
+    background-position: left;
+    background-size: 180% auto;
     &__inner {
         padding-top: 77px;
     }
