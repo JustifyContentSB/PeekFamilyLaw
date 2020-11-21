@@ -1,6 +1,6 @@
 .header {
     margin: 0 auto;
-    width: 375px;
+    width: 768px;
     min-height: 893px;
     background: url('../images/header/header-bg.jpg');
     background-position: bottom;
@@ -41,11 +41,40 @@
         padding: 28px 31px;
         background: #0F3962;
         border-radius: 34px;
+        text-align: center;
         font-weight: 800;
         font-size: 12.36px;
         line-height: 12.36px;
         letter-spacing: -0.000266132px;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .header {
+        min-height: 1192px;
+        background-size: 195% auto;
+        background-position: bottom left 30%;
+        &__bottom {
+            margin-top: 145px;
+        }
+        &__title {
+            font-size: 55px;
+            line-height: 73px;
+            letter-spacing: -1px;
+        }
+        &__text {
+            width: 380px;
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        &__request {
+            margin-top: 62px;
+            min-width: 225px;
+            padding: 30px;
+            font-size: 11.7px;
+        }
     }
 }
