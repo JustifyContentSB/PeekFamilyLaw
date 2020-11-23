@@ -92,3 +92,16 @@
         }
     }
 }
+
+@media screen and(min-width: 1200px) {
+    .stats {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__table {
+            width: 808px;
+        }
+    }
+}

@@ -48,11 +48,20 @@
             flex-wrap: wrap;
             align-items: flex-start;
         }
+        &__video {
+            & img {
+                width: 774px;
+            }
+        }
         &__info {
             width: 258px;
+            order: -1;
         }
         &__title {
             display: inline;
+        }
+        &__text {
+            margin-top: 66px;
         }
     }
 }

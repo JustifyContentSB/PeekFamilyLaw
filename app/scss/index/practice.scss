@@ -23,3 +23,16 @@
         }
     }
 }
+
+@media screen and(min-width: 1200px) {
+    .practice {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__info {
+            width: 259px;
+        }
+    }
+}
