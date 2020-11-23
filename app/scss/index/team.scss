@@ -1,8 +1,7 @@
 .team {
-    width: 768px;
     margin: 0 auto;
     margin-top: 106px;
-    background: url('../images/team/team-bg.png');
+    background: url('../images/index/team/team-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     & .container {
@@ -67,7 +66,7 @@
 @media screen and(min-width: 768px) {
     .team {
         margin-top: 213px;
-        background: url('../images/team/team-bg-big.jpg');
+        background: url('../images/index/team/team-bg-big.jpg');
         background-size: 128%;
         &__inner {
             padding-top: 140px;
@@ -94,7 +93,7 @@
                 & .team__photo {
                     width: 362px;
                     height: 296px;
-                    background: url('../images/team/team-1-big.jpg');
+                    background: url('../images/index/team/team-1-big.jpg');
                     background-size: contain;
                     background-repeat: no-repeat;
                 }

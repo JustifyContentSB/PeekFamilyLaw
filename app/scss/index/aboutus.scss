@@ -5,6 +5,9 @@
         &-tablet {
             display: none;
         }
+        & img {
+            margin: 0 auto;
+        }
     }
     &__title {
         display: none;
@@ -32,6 +35,24 @@
             line-height: 40px;
             letter-spacing: -0.00038757px;
             color: #666666;
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .aboutus {
+        margin-top: 90px;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        &__info {
+            width: 258px;
+        }
+        &__title {
+            display: inline;
         }
     }
 }

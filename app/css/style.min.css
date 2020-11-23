@@ -443,16 +443,27 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
-  width: 375px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
     padding: 0 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 15px;
   }
 }
 
@@ -484,11 +495,41 @@ body {
   }
 }
 
+.nav__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    max-width: 660px;
+  }
+  .nav li {
+    margin-left: 25px;
+  }
+  .nav li:first-child {
+    margin-left: 0;
+  }
+  .nav a {
+    font-family: 'Martel';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.000344507px;
+    color: #08335D;
+  }
+}
+
 .header {
-  margin: 0 auto;
-  width: 768px;
   min-height: 893px;
-  background: url("../images/header/header-bg.jpg");
+  background: url("../images/index/header/header-bg.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-position: left;
@@ -581,10 +622,13 @@ body {
   }
 }
 
-.nav__burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .header {
+    min-height: 1313px;
+  }
+  .header__burger {
+    display: none;
+  }
 }
 
 .aboutus {
@@ -599,6 +643,10 @@ body {
 
 .aboutus__video-tablet {
   display: none;
+}
+
+.aboutus__video img {
+  margin: 0 auto;
 }
 
 .aboutus__title {
@@ -626,6 +674,28 @@ body {
     line-height: 40px;
     letter-spacing: -0.00038757px;
     color: #666666;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus {
+    margin-top: 90px;
+  }
+  .aboutus__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutus__info {
+    width: 258px;
   }
 }
 
@@ -675,12 +745,11 @@ body {
 }
 
 .stats {
-  width: 768px;
   min-height: 864px;
   margin: 0 auto;
   margin-top: 75px;
   padding-top: 92px;
-  background: url("../images/stats/stats-bg.jpg");
+  background: url("../images/index/stats/stats-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -781,10 +850,9 @@ body {
 }
 
 .testimonials {
-  width: 768px;
   margin: 0 auto;
   margin-top: 108px;
-  background: url("../images/testimonials/bitmap.png");
+  background: url("../images/index/testimonials/bitmap.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -830,7 +898,7 @@ body {
     z-index: -1;
     width: 100%;
     height: 974px;
-    background: url("../images/testimonials/bitmap-tablet.png");
+    background: url("../images/index/testimonials/bitmap-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -853,10 +921,9 @@ body {
 }
 
 .team {
-  width: 768px;
   margin: 0 auto;
   margin-top: 106px;
-  background: url("../images/team/team-bg.png");
+  background: url("../images/index/team/team-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -937,7 +1004,7 @@ body {
 @media screen and (min-width: 768px) {
   .team {
     margin-top: 213px;
-    background: url("../images/team/team-bg-big.jpg");
+    background: url("../images/index/team/team-bg-big.jpg");
     background-size: 128%;
   }
   .team__inner {
@@ -965,7 +1032,7 @@ body {
   .team__item:first-child .team__photo {
     width: 362px;
     height: 296px;
-    background: url("../images/team/team-1-big.jpg");
+    background: url("../images/index/team/team-1-big.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1026,7 +1093,6 @@ body {
 }
 
 .footer__copy {
-  width: 293px;
   margin-top: 12px;
   font-size: 13px;
   line-height: 24px;
@@ -1058,7 +1124,6 @@ body {
   }
   .footer__copy {
     margin-top: 30px;
-    width: 100%;
   }
 }
 

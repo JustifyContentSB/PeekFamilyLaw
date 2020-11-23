@@ -1,0 +1,28 @@
+.nav {
+    &__burger {
+        display: flex;
+    }
+    &__list {
+        display: flex;
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .nav {
+        max-width: 660px;
+        & li {
+            margin-left: 25px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        & a {
+            font-family: 'Martel';
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: -0.000344507px;
+            color: #08335D;
+        }
+    }
+}
