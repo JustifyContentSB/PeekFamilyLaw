@@ -896,18 +896,33 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .stats {
+    background: url("../images/index/stats/stats-bg-dekstop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .stats__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    min-height: 1080px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .stats__table {
-    width: 808px;
+    margin-top: 0;
+    width: 550px;
+  }
+  .stats__info {
+    width: 445px;
+    margin-bottom: 50px;
   }
 }
 
@@ -919,6 +934,10 @@ body {
   background-size: contain;
   background-position: bottom;
   text-align: center;
+}
+
+.testimonials__inner {
+  margin: 0 auto;
 }
 
 .testimonials__text {
@@ -979,6 +998,38 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials {
+    margin-top: 110px;
+    padding: 100px 0;
+    background: url("../../images/index/testimonials/bitmap.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 120%;
+  }
+  .testimonials::after {
+    display: none;
+  }
+  .testimonials__inner {
+    width: 900px;
+    padding-left: 240px;
+    position: relative;
+    text-align: left;
+  }
+  .testimonials__text {
+    width: 100%;
+    text-align: left;
+  }
+  .testimonials__photo {
+    position: absolute;
+    left: 0;
+    top: 15%;
+  }
+  .testimonials__author {
+    margin-top: 45px;
   }
 }
 
@@ -1113,6 +1164,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    margin-top: 113px;
+  }
+}
+
 .footer {
   margin-top: 66px;
 }
@@ -1186,6 +1243,33 @@ body {
   }
   .footer__copy {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__address {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .footer__address br {
+    display: none;
+  }
+  .footer__social {
+    margin-top: 0;
   }
 }
 

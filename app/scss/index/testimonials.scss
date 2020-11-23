@@ -6,6 +6,9 @@
     background-size: contain;
     background-position: bottom;
     text-align: center;
+    &__inner {
+        margin: 0 auto;
+    }
     &__text {
         width: 291px;
         margin: 0 auto;
@@ -60,6 +63,38 @@
         }
         &__photo {
             display: flex;
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .testimonials {
+        margin-top: 110px;
+        padding: 100px 0;
+        background: url('../../images/index/testimonials/bitmap.png');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 50% 120%;
+        &::after {
+            display: none;
+        }
+        &__inner {
+            width: 900px;
+            padding-left: 240px;
+            position: relative;
+            text-align: left;
+        }
+        &__text {
+            width: 100%;
+            text-align: left;
+        }
+        &__photo {
+            position: absolute;
+            left: 0;
+            top: 15%;
+        }
+        &__author {
+            margin-top: 45px;
         }
     }
 }
