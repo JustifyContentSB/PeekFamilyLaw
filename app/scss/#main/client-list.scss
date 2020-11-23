@@ -1,0 +1,40 @@
+.client-list {
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &__item {
+        margin-bottom: 23px;
+    }
+    &__link {
+        display: inline-block;
+        padding: 21px 30px 21px 58px;
+        background: #C3A575;
+        border-radius: 28px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 33px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &--request {
+            &::before {
+                width: 11.52px;
+                height: 11.52px;
+                background: url('../../images/icons/pencil.svg');
+                background-repeat: no-repeat;
+            }
+        }
+        &--login {
+            &::before {
+                width: 9px;
+                height: 11px;
+                background: url('../../images/icons/login.svg');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

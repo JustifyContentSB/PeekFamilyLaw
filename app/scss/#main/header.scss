@@ -79,9 +79,18 @@
 
 @media screen and(min-width: 1200px) {
     .header {
-        min-height: 1313px;
+        min-height: 1298px;
         &__burger {
             display: none;
+        }
+    }
+}
+
+@media screen and(min-width: 1920px) {
+    .header {
+        background-size: cover;
+        &__bottom {
+            margin-top: 196px;
         }
     }
 }

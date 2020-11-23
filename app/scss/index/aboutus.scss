@@ -65,3 +65,13 @@
         }
     }
 }
+
+@media screen and(min-width: 1920px) {
+    .aboutus {
+        margin-top: 202px;
+        &__video {
+            margin-top: 15px;
+            margin-right: 5px;
+        }
+    }
+}

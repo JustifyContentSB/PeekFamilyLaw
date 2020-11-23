@@ -98,3 +98,22 @@
         }
     }
 }
+
+@media screen and(min-width: 1920px) {
+    .testimonials {
+        padding: 197px 0 250px;
+        background-size: 90%;
+        background-position: 10% 70%;
+        &__inner {
+            width: 930px;
+            padding-left: 271px;
+        }
+        &__text {
+            margin-top: 145px;
+        }
+        &__photo {
+            top: 41%;
+            left: 30px;
+        }
+    }
+}

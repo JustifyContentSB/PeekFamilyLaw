@@ -3,13 +3,16 @@
         display: flex;
     }
     &__list {
-        display: flex;
+        display: none;
     }
 }
 
 @media screen and(min-width: 1200px) {
     .nav {
         max-width: 660px;
+        &__list {
+            display: flex;
+        }
         & li {
             margin-left: 25px;
             &:first-child {
@@ -23,6 +26,15 @@
             line-height: 27px;
             letter-spacing: -0.000344507px;
             color: #08335D;
+        }
+    }
+}
+
+@media screen and(min-width: 1920px) {
+    .nav {
+        max-width: 800px;
+        & li {
+            margin-left: 52px;
         }
     }
 }

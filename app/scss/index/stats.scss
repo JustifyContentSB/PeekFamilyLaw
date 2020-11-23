@@ -98,9 +98,9 @@
         background: url('../images/index/stats/stats-bg-dekstop.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: 904px;
         &__inner {
             display: flex;
-            min-height: 1080px;
             justify-content: space-between;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -113,6 +113,22 @@
         &__info {
             width: 445px;
             margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and(min-width: 1920px) {
+    .stats {
+        margin-top: 192px;
+        &__table {
+            margin-top: 92px;
+            width: 640px;
+            & td {
+                padding-right: 87px;
+                &:nth-child(odd) {
+                    padding-right: 99px;
+                }
+            }
         }
     }
 }

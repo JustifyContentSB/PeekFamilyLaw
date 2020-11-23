@@ -101,6 +101,9 @@
                     display: none;
                 }
             }
+            &:last-child {
+                margin-right: 0;
+            }
         }
         &__photo {
             border-radius: 11px;
@@ -118,5 +121,117 @@
 @media screen and(min-width: 1200px) {
     .team {
         margin-top: 113px;
+    }
+}
+
+@media screen and(min-width: 1920px) {
+    .team {
+        height: 1153px;
+        margin-top: 93px;
+        position: relative;
+        background: transparent;
+        & .container {
+            max-width: 100%;
+            padding-left: 365px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            width: 965px;
+            height: 1153px;
+            background: url('../../images/index/team/team-bg-big.jpg');
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: calc(100% - 965px);
+            height: 570px;
+            background: #F2F8F8;
+        }
+        &__inner {
+            padding-top: 279px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        &__about {
+            width: 263px;
+            padding: 0;
+        }
+        &__descr {
+            width: 100%;
+            margin-top: 65px;
+            padding-left: 2px;
+        }
+        &__list {
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        &__item {
+            margin-right: 25px;
+            background: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0px 0px 82px -5px #F2F8F8;;
+        }
+        &__photo {
+            & img {
+                height: 303px;
+            }
+        }
+        &__info {
+            min-height: 306px;
+            padding: 47px 43px 27px 55px;
+        }
+        &__name {
+            color: #000;
+        }
+        &__text {
+            color: rgba(#000, 0.4);
+        }
+        &__swift {
+            display: block;
+            width: 79px;
+            height: 79px;
+            border: 1px solid #FFFFFF;
+            cursor: pointer;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 16px;
+                height: 28px;
+                background: url('../../images/index/team/arrow.svg');
+            }
+            &-left {
+                border-radius: 6px 0 0 6px;
+                opacity: 0.2;
+                &::before {
+                    top: 33%;
+                    left: 36%;
+                    transform: rotate(180deg)
+                }
+            }
+            &-right {
+                border-radius: 0px 6px 6px 0px;
+            }
+            &-wrapper {
+                display: flex;
+                margin-top: 115px;
+                margin-left: 3px;
+            }
+        }
     }
 }

@@ -1,4 +1,12 @@
 .practice-menu {
+    &__title {
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: -0.000322975px;
+        color: rgba(0, 0, 0, 0.3);
+        display: none;
+    }
     & li {
         border-bottom: 1px solid #DBC9AC;
     }
@@ -7,6 +15,15 @@
         color: #7F7F7F;
         text-transform: uppercase;
         display: inline-block;
+    }
+    &__right {
+        display: none;
+        &-inner {
+            display: flex;
+            & ul {
+                margin-right: 77px;
+            }
+        }
     }
 }
 
@@ -20,13 +37,40 @@
 
 @media screen and(min-width: 1200px) {
     .practice-menu {
-        width: 770px;
+        width: 777px;
         margin-top: 75px;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         & ul {
             width: 335px;
+        }
+    }
+}
+
+@media screen and(min-width: 1920px) {
+    .practice-menu {
+        &__col {
+            & ul {
+                margin-top: 35px;
+            }
+        }
+        &__title {
+            display: inline;
+        }
+        &__right {
+            display: block;
+        }
+        & ul {
+            width: auto;
+        }
+        & li {
+            border-bottom: 0;
+        }
+        & a {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &__col {
+            margin-right: 111px;
         }
     }
 }
