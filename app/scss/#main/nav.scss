@@ -1,17 +1,76 @@
 .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #08335D;
+    overflow-y: auto;
+    transition: all 0.3s ease;
     &__burger {
         display: flex;
     }
+    &__close {
+        display: flex;
+        position: absolute;
+        z-index: 50;
+        right: 38px;
+        top: 75px;
+    }
     &__list {
-        display: none;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 126px 41px 168px;
+        & a {
+            display: block;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(#fff, 0.14);
+        }
+        &-submenu {
+            display: none;
+            padding-left: 27px;
+            color: rgba(255, 255, 255, 0.7);
+            & a {
+                font-size: 14px;
+            }
+        }
+        &-click {
+            position: relative;
+            &::after {
+                content:'';
+                position: absolute;
+                top: 29px;
+                right: 0;
+                width: 10px;
+                height: 6px;
+                background: url('../../images/icons/nav-arrow.svg');
+            }
+            &--active {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__block {
+        right: 0;
     }
 }
 
 @media screen and(min-width: 1200px) {
     .nav {
+        position: static;
         max-width: 660px;
+        height: auto;
+        background: transparent;
+        overflow: hidden;
+        &__close {
+            display: none;
+        }
         &__list {
             display: flex;
+            padding: 0;
         }
         & li {
             margin-left: 25px;
@@ -20,12 +79,14 @@
             }
         }
         & a {
+            padding: 0;
             font-family: 'Martel';
             font-weight: bold;
             font-size: 16px;
             line-height: 27px;
             letter-spacing: -0.000344507px;
             color: #08335D;
+            text-transform: none;
         }
     }
 }

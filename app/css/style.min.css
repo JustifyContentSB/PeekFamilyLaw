@@ -403,6 +403,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
+.block {
+  display: block !important;
+}
+
 @font-face {
   font-family: 'Muli';
   font-display: swap;
@@ -496,24 +500,96 @@ body {
   }
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #08335D;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .nav__burger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.nav__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  right: 38px;
+  top: 75px;
+}
+
 .nav__list {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 126px 41px 168px;
+}
+
+.nav__list a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.nav__list-submenu {
   display: none;
+  padding-left: 27px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav__list-submenu a {
+  font-size: 14px;
+}
+
+.nav__list-click {
+  position: relative;
+}
+
+.nav__list-click::after {
+  content: '';
+  position: absolute;
+  top: 29px;
+  right: 0;
+  width: 10px;
+  height: 6px;
+  background: url("../../images/icons/nav-arrow.svg");
+}
+
+.nav__list-click--active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.nav__block {
+  right: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .nav {
+    position: static;
     max-width: 660px;
+    height: auto;
+    background: transparent;
+    overflow: hidden;
+  }
+  .nav__close {
+    display: none;
   }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
   }
   .nav li {
     margin-left: 25px;
@@ -522,12 +598,14 @@ body {
     margin-left: 0;
   }
   .nav a {
+    padding: 0;
     font-family: 'Martel';
     font-weight: bold;
     font-size: 16px;
     line-height: 27px;
     letter-spacing: -0.000344507px;
     color: #08335D;
+    text-transform: none;
   }
 }
 
@@ -545,7 +623,7 @@ body {
   background: url("../images/index/header/header-bg.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left bottom;
   background-size: 180% auto;
 }
 

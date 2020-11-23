@@ -20,9 +20,38 @@
 						<div class="nav__wrapper">
 							<a class="header__burger nav__burger" href="#"><img src="images/icons/hamburger.svg" alt="hamburger" width="26"></a>
 							<nav class="header__nav nav">
-								<ul class="nav__list">				                                                         
+								<a class="nav__close" href="#">
+									<img src="images/icons/close.svg" alt="close the menu">
+								</a>
+								<ul class="nav__list">                              
 									<li><a href="#">About</a></li>
-									<li><a href="#">Practice areas</a></li>
+									<li class="nav__list-click">
+										<a href="#">Practice areas</a>
+										<ul class="nav__list-submenu">
+											<li><a href="#">Adoption</a></li>
+											<li><a href="#">Alimony</a></li>
+											<li class="nav__list-click">
+												<a href="#">Divorce</a>
+												<ul class="nav__list-submenu">
+													<li><a href="#">contested divorce</a></li>
+													<li><a href="#">uncontested divorce</a></li>
+													<li><a href="#">collaborative divorce</a></li>
+													<li><a href="#">high net worth divorce</a></li>
+													<li><a href="#">military divorce</a></li>
+													<li><a href="#">legal separation</a></li>
+													<li><a href="#">property division</a></li>
+													<li><a href="#">same-sex divorce</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Child Custody</a></li>
+											<li><a href="#">Grandparet Rights</a></li>
+											<li><a href="#">Psychological Parenting Rights</a></li>
+											<li><a href="#">Relocation</a></li>
+											<li><a href="#">Dependency and Neglet</a></li>
+											<li><a href="#">Common Law Marriages</a></li>
+											<li><a href="#">Abduction Prevention</a></li>
+										</ul>
+									</li>
 									<li><a href="#">Case evaluation</a></li>
 									<li><a href="#">Testimonials</a></li>
 									<li><a href="#">Blog</a></li>
@@ -236,6 +265,8 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="js/script.js"></script>
 
 </body>
 </html>

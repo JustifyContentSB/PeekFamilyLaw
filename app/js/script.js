@@ -1,0 +1,27 @@
+var navBurger = document.querySelector('.nav__burger');
+var navClose = document.querySelector('.nav__close');
+var nav = document.querySelector('.nav');
+
+navBurger.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    nav.classList.toggle('nav__block');
+});
+
+navClose.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    nav.classList.toggle('nav__block');
+});
+
+let navClick = document.querySelectorAll(".nav__list-click");
+let navSubmenu = document.querySelectorAll(".nav__list-submenu");
+
+function showList(){
+    this.parentNode.children[1].classList.toggle("block");
+    this.parentNode.children[0].classList.toggle("nav__list-click--active");
+}
+    
+for(var i = 0; i < navClick.length; i++) {
+    navClick[i].children[0].addEventListener("click", showList);
+}
