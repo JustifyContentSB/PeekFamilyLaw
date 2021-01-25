@@ -46,6 +46,10 @@
         letter-spacing: -0.000266132px;
         text-transform: uppercase;
         color: #FFFFFF;
+        &:hover,
+        &:focus {
+            background: rgba(#0F3962, 0.8);
+        }
     }
 }
 

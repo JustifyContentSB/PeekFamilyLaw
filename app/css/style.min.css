@@ -541,6 +541,10 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
+.nav__list a:hover, .nav__list a:focus {
+  opacity: 0.5;
+}
+
 .nav__list-submenu {
   display: none;
   padding-left: 27px;
@@ -683,6 +687,10 @@ body {
   letter-spacing: -0.000266132px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.header__request:hover, .header__request:focus {
+  background: rgba(15, 57, 98, 0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -1205,7 +1213,7 @@ body {
   .testimonials {
     margin-top: 110px;
     padding: 100px 0;
-    background: url("../../images/index/testimonials/bitmap.png");
+    background: url("../images/index/testimonials/bitmap.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 50% 120%;
@@ -1411,7 +1419,7 @@ body {
     top: 0;
     width: 965px;
     height: 1153px;
-    background: url("../../images/index/team/team-bg-big.jpg");
+    background: url("../images/index/team/team-bg-big.jpg");
   }
   .team::after {
     content: '';
@@ -1490,7 +1498,7 @@ body {
             transform: translate(-50%, -50%);
     width: 16px;
     height: 28px;
-    background: url("../../images/index/team/arrow.svg");
+    background: url("../images/index/team/arrow.svg");
   }
   .team__swift-left {
     border-radius: 6px 0 0 6px;
@@ -1546,14 +1554,14 @@ body {
 .client-list__link--request::before {
   width: 11.52px;
   height: 11.52px;
-  background: url("../../images/icons/pencil.svg");
+  background: url("../images/icons/pencil.svg");
   background-repeat: no-repeat;
 }
 
 .client-list__link--login::before {
   width: 9px;
   height: 11px;
-  background: url("../../images/icons/login.svg");
+  background: url("../images/icons/login.svg");
   background-repeat: no-repeat;
 }
 
@@ -1596,6 +1604,7 @@ body {
 
 .footer__bottom {
   margin-top: 60px;
+  padding-bottom: 30px;
 }
 
 .footer__copy {

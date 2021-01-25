@@ -142,7 +142,7 @@
             top: 0;
             width: 965px;
             height: 1153px;
-            background: url('../../images/index/team/team-bg-big.jpg');
+            background: url('../images/index/team/team-bg-big.jpg');
         }
         &::after {
             content: '';
@@ -213,7 +213,7 @@
                 transform: translate(-50%, -50%);
                 width: 16px;
                 height: 28px;
-                background: url('../../images/index/team/arrow.svg');
+                background: url('../images/index/team/arrow.svg');
             }
             &-left {
                 border-radius: 6px 0 0 6px;
